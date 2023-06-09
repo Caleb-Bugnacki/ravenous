@@ -1,0 +1,13 @@
+.Business {
+    display : flex;
+}
+.BusinessReviews{
+    display : flex;
+}
+
+.ImageContainer img{
+    width: 100%; 
+}
+.BusinessInformation{
+    display : flex;
+}

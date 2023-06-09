@@ -1,33 +1,50 @@
 import React from "react";
+import styles from "./Business.module.css";
 
-const business ={
-    imageSrc : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fscorpionsnowmobiles%2Fposts%2Fthe-hudson-thehudson_218hometown-history-on-display-inside-the-brand-new-hudson-%2F10163901122574815%2F&psig=AOvVaw2T7Y36kWkAr74fEsutW1oY&ust=1686153541063000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJi8_8iBr_8CFQAAAAAdAAAAABAE",
-    name : "Hudson",
-    address : "208 Curtis Ave",
-    city : "Ironton",
-    state : "Minnesota", 
-    zipcode : "56455",
-    category : "Cafe",
-    rating : 4.8, 
-    reviewCount : 62
-}
-
-function Business(){
-    return (
-        <div>
-            <div>
-                <img src={business.imageSrc}/>
-            </div>
-            <div>   
-                <h1>{business.name}</h1>
-            </div>
-            <div>
-                <address>{business.address} {business.city}, {business.state} {business.zipcode}</address>
-                <h2>Rating: {business.rating}</h2>
-                <h2>Number of reviews: {business.reviewCount}</h2>
-            </div>
-        </div>
-    ); 
+const business = {
+  imageSrc: "HudsonImg.jpg",
+  name: "The Hudson",
+  address: "208 Curtis Ave",
+  city: "Ironton",
+  state: "Minnesota",
+  zipcode: "56455",
+  category: "Cafe",
+  rating: 4.8,
+  reviewCount: 62,
 };
 
-export default Business; 
+function Business() {
+  return (
+    <div className="col my-2 border border-black border-4">
+      <div className="card mx-0 px-0">
+        <img
+          src={business.imageSrc}
+          className="card-img-top border border-black border-5 mx-0 px-0"
+          alt="..."
+        />
+        <div className="card-body">
+          <h5 className="card-title text-center fw-bolder fs-3">
+            {business.name}
+          </h5>
+          <div className="row row-cols-2">
+            <div className="column">
+              <p className="card-text fs-6">
+                {business.address} <br></br>
+                {business.city} <br></br>
+                {business.state} {business.zipcode}
+              </p>
+            </div>
+
+            <div className="column">
+              <h5 className="text-end fs-5">{business.category}</h5>
+              <h5 className="text-end fs-5">{business.rating} stars</h5>
+              <h5 className="text-end fs-5">{business.reviewCount} reviews</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Business;
