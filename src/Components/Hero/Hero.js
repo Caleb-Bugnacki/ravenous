@@ -3,11 +3,11 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <div className="container-fluid mx-0 px-0 mt-0 pt-0 " id="hero-container">
+    <div className="container-fluid mx-0 px-0 mt-0 pt-0" id="hero-container">
       <div className="row">
         <div className="col">
           <div className="input-group text-center">
-            <form className="form-inline my-2 my-lg-0 ">
+            <form className="form-inline my-2 my-lg-4 ">
               <input
                 className="form-control mr-sm-2 text-center"
                 type="search"
@@ -19,7 +19,7 @@ function Hero() {
         </div>
         <div className="col">
           <div className="input-group text-center">
-            <form className="form-inline my-2 my-lg-0 ">
+            <form className="form-inline my-2 my-lg-4 ">
               <input
                 className="form-control mr-sm-2 text-center"
                 type="search"
@@ -34,7 +34,7 @@ function Hero() {
         <div className="col text-center">
           <a
             href="#"
-            className="btn btn-primary btn-lg active "
+            className="btn btn-lg btn-outline-warning "
             role="button"
             aria-pressed="true"
           >

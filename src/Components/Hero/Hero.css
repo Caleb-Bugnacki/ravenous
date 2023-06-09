@@ -9,4 +9,5 @@
     object-fit: contain;
     margin: auto;
     padding: auto;
+    justify-content: center;
 }
