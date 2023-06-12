@@ -1,19 +1,7 @@
 import React from "react";
 import styles from "./Business.module.css";
 
-const business = {
-  imageSrc: "HudsonImg.jpg",
-  name: "The Hudson",
-  address: "208 Curtis Ave",
-  city: "Ironton",
-  state: "Minnesota",
-  zipcode: "56455",
-  category: "Cafe",
-  rating: 4.8,
-  reviewCount: 62,
-};
-
-function Business() {
+function Business({ business }) {
   return (
     <div className="col my-2 border border-black border-4">
       <div className="card mx-0 px-0">

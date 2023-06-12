@@ -1,30 +1,17 @@
 import React from "react";
 import Business from "../Business/Business";
 
-function BusinessList() {
+function BusinessList({ businesses }) {
   return (
     <div className="container">
       <div className="row">
-        <div className="col">
-          <Business />
-        </div>
-        <div className="col">
-          <Business />
-        </div>
-        <div className="col">
-          <Business />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col">
-          <Business />
-        </div>
-        <div className="col">
-          <Business />
-        </div>
-        <div className="col">
-          <Business />
-        </div>
+        {businesses.map((business) => {
+          return (
+            <div className="col-4">
+              <Business business={business} key={business.name} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
